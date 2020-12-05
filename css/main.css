@@ -406,6 +406,19 @@ h2.text-t1 span{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+h2.text-t2{
+  background-image: linear-gradient(to right, #2d271b, #2d221b, #2d271b, #1a1817, #1a1817, #1a1817, #161518, #141416, #141416, #141416, #141416, #141416);
+  font-family: PSL-Extra;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 60px;
+  padding: 0px 10px 5px !important;  
+}
+h2.text-t2 span{
+  background: -webkit-linear-gradient(#e4d7b2, #cc9c34);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .item-game-box{  
   overflow: hidden;
@@ -546,4 +559,78 @@ h2.text-t1 span{
 }
 .bb-btn p:hover{ 
   transform: scale(1.02);
+}
+
+
+.award{
+  background-color: #1d1d1f; 
+  padding: 30px 15px 0px;
+}
+.award .box{
+  background-color: #151517; 
+  padding: 15px;
+  text-align: center;
+  font-family: PSL-Extra;
+  color: #fff;
+  font-size: 22px; 
+  margin-bottom: 30px;
+}
+.award .box img.img-fluid{
+  height: 108px;
+}
+.award .box:hover{
+  background-color: rgba(21,21,23,.65);  
+}
+.award .box img:hover{
+  transform: scale(1.02); 
+}
+
+
+
+.award p.p1{  
+  font-family: PSL-Extra;
+  color: #fff;
+  font-size: 20px; 
+  margin-top: 25px;
+}
+.award p.p2{  
+  font-family: PSL-Extra;
+  color: #fff;
+  font-size: 20px; 
+  margin-top: 25px;
+}
+.award p.p1 span{  
+  font-family: PSL-Extra;
+  color: #25dffe;
+}
+.award p.p2 span{  
+  font-family: PSL-Extra;
+  color: #fdda2c;
+}
+.btn-aw{
+  background-image: url(../images/btn-aw.png); 
+  background-size: 140px 33px;
+  width: 140px;
+  height: 33px;
+  margin: auto;
+  font-family: PSL-Extra;
+  color: #331907;
+  font-size: 22px;
+}
+
+.btna{
+  background-image: linear-gradient(to bottom, #33312a, #33312a, #32312a, #323029, #323029, #323029, #323029, #323029, #323029, #32312a, #33312a, #33312a); 
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #564d40;
+  font-family: PSL-Extra;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin-right: 15px;
+}
+.btna.active{ 
+  color: #fffda4; 
+}
+.btna:hover{ 
+  color: #fffda4; 
 }
