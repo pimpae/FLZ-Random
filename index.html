@@ -22,12 +22,12 @@
         <div class="col">
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-11 col-md-12">
-                    <nav class="navbar navbar-expand-md navbar-dark  ">                  
+                    <nav class="navbar navbar-expand-xl navbar-dark  ">                  
                         <a href="index.html" class="navbar-brand">
                             <img src="images/logo.png">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
-                        <span class="navbar-toggler-icon"></span>
+                            <span class="lnr lnr-menu"></span>
                         </button>
                         <div class="navbar-collapse collapse" id="navbar4">
                             <ul class="navbar-nav">
@@ -94,7 +94,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-11 col-md-12">
                     <div class="row">
-                        <div class="col-lg-9 p-0">
+                        <div class="col-xl-9 col-md-12 col-12 p-0">
                             <div class="clearfix">&nbsp;</div>
                             <div class="clearfix">&nbsp;</div>
                             <div class="col">
@@ -120,21 +120,21 @@
                             <div class="clearfix">&nbsp;</div>
                             <div class="clearfix">&nbsp;</div>
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-xl-4 col-md-4 col-12">
                                     <img src="images/g1.png" class="img-fluid d-block mx-auto">
                                     <div class="clearfix">&nbsp;</div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-xl-4 col-md-4 col-12">
                                     <img src="images/g2.png" class="img-fluid d-block mx-auto">
                                     <div class="clearfix">&nbsp;</div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-xl-4 col-md-4 col-12">
                                     <img src="images/g3.png" class="img-fluid d-block mx-auto">
                                     <div class="clearfix">&nbsp;</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-xl-3 col-md-12 col-12">
                             <div class="clearfix">&nbsp;</div>
                             <div class="col top-win-box">
                                 <ul>
@@ -398,13 +398,21 @@
         $(document).ready(function() {
         
             var width = $(window).width();
-            if (width>992) {
+            if (width==1024) {
+                $("#item-game").lightSlider({
+                    item:4,
+                    loop:true,
+                    keyPress:true,
+                }); 
+            }
+            else if (width>992) {
                 $("#item-game").lightSlider({
                     item:5,
                     loop:true,
                     keyPress:true,
                 }); 
             }
+            
             else{
                 $("#item-game").lightSlider({
                     item:1,

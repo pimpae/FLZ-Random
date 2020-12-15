@@ -108,18 +108,16 @@ body.bg-01{
 
 .navbar .navbar-collapse .navbar-nav .nav-item p{
   font-family: PSL-Extra;
-  background-color: #ff0000;
-  margin-top: 15px;
+  background-color: #ff0000;  
   border-radius: 100%;
   width: 20px;
   height: 20px;
-  padding: 0px 8px;
+  padding: 0px 7px;
   color: #fff !important;
   font-size: 18px;
   line-height: 20px;
   position: absolute;
-  top: 0; 
-  margin-left: 65px;
+  margin-left: 65px; 
 }
 .itemz{
   font-family: PSL-Extra;
@@ -156,12 +154,10 @@ body.bg-01{
   content: "";
   background-image: url(../images/vip-mini.png); 
   position: absolute;
-  top: 0;
   width: 28px;
   height: 20px;
   margin-left: 12px;
-  margin-top: 5px;
-  z-index: 10;
+  z-index: 10; 
 }
 .btn-logout div{
   background-image: url(../images/btn-logout.png); 
@@ -733,4 +729,57 @@ h2.text-t2 span{
   font-size: 22px;
   color: #ffea84;
   padding-left: 10px;
+}
+.navbar-toggler{
+  border-color: unset !important;
+  color: unset !important; 
+}
+.lnr-menu{
+  color: #fdda2c;
+  font-size: 30px;
+  float: right;
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 991px) { /* MOBILE */
+  .btn-logout div{
+    left: 0;
+  } 
+  .navbar .navbar-collapse .navbar-nav .nav-item p{ 
+    margin-top: -45px;
+  }
+  .userpicM:before{ 
+    margin-top: 5px; 
+  }
+}
+@media only screen and (min-width: 992px) { /* PC */
+  .navbar .navbar-collapse .navbar-nav .nav-item p{ 
+    top: 0; 
+    margin-top: 15px;
+  }
+  .userpicM:before{ 
+    margin-top: 5px;
+    top: 0;
+  }
+}
+@media only screen and (width: 768px) { /* IPAD */
+  .btn-logout div{
+    left: 0;
+  } 
+
+}
+@media only screen and (width: 1024px) { /* IPAD PRO */
+  .btn-logout div{
+    left: 0;
+  } 
+  .navbar .navbar-collapse .navbar-nav .nav-item p{ 
+    margin-top: -45px !important;
+    top: unset;
+  }
+  .userpicM:before{ 
+    margin-top: -4px !important; 
+    top: unset;
+  }
 }
