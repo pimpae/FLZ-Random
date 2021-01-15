@@ -393,8 +393,7 @@ h2.text-t1{
   background-image: linear-gradient(to right, #2d271b, #2d221b, #2d271b, #1a1817, #1a1817, #1a1817, #161518, #141416, #141416, #141416, #141416, #141416);
   font-family: Bebas_Regular;
   text-transform: uppercase;
-  color: #fff;
-  font-size: 60px;
+  color: #fff; 
   padding: 0px 10px 5px !important;  
 }
 h2.text-t1 span{
@@ -406,8 +405,7 @@ h2.text-t2{
   background-image: linear-gradient(to right, #2d271b, #2d221b, #2d271b, #1a1817, #1a1817, #1a1817, #161518, #141416, #141416, #141416, #141416, #141416);
   font-family: PSL-Extra;
   text-transform: uppercase;
-  color: #fff;
-  font-size: 60px;
+  color: #fff; 
   padding: 0px 10px 5px !important;  
 }
 h2.text-t2 span{
@@ -521,39 +519,8 @@ h2.text-t2 span{
   display: block;
   margin: auto;
 }
-.bb-btn .bb1 p{
-  background-image: url(../images/bb1.png); 
-  background-size: 197px 65px;
-  width: 197px;
-  height: 65px;
-  display: inline-block;
-  margin: auto;
-  margin-right: -20px;
-}
-.bb-btn .bb2 p{
-  background-image: url(../images/bb2.png); 
-  background-size: 166px 65px;
-  width: 166px;
-  height: 65px;
-  display: inline-block;
-  margin: auto;
-}
-.bb-btn .bb3 p{  
-  background-image: url(../images/bb3.png); 
-  background-size: 197px 65px;
-  width: 197px;
-  height: 65px;  
-  display: inline-block;
-  margin: auto;
-  margin-left: -20px;
-}
-.bb-btn p{
-  font-family: PSL-Omyim;
-  text-shadow: -1px 0 #ffff05, 0 1px #ffff05, 1px 0 #ffff05, 0 -1px #ffff05;
-  color: #bb2601;
-  font-size: 32px; 
-  line-height: 60px;
-}
+
+
 .bb-btn p:hover{ 
   transform: scale(1.02);
 }
@@ -607,7 +574,8 @@ h2.text-t2 span{
 .btn-aw{
   background-image: url(../images/btn-aw.png); 
   background-size: 140px 33px;
-  width: 140px;
+  width: 100%;
+  max-width: 140px;
   height: 33px;
   margin: auto;
   font-family: PSL-Extra;
@@ -721,8 +689,7 @@ h2.text-t2 span{
 .wd-box .wd-box-x div:nth-child(1){
   font-family: PSL-Extra;
   font-size: 20px;
-  color: #c7c7c7;
-  padding-left: 60px;
+  color: #c7c7c7; 
 } 
 
 .wd-box .wd-box-x .p2 .x{
@@ -753,6 +720,43 @@ h2.text-t2 span{
   .userpicM:before{ 
     margin-top: 5px; 
   }
+  
+  .bb-btn .bb1 p{
+    background-image: url(../images/bb1.png); 
+    background-size: 100% 55px;
+    width: 32%;
+    height: 55px;
+    display: inline-block;
+    margin: auto; 
+  }
+  .bb-btn .bb2 p{
+    background-image: url(../images/bb2.png); 
+    background-size: 100% 55px;
+    width: 32%;
+    height: 55px;
+    display: inline-block; 
+  }
+  .bb-btn .bb3 p{  
+    background-image: url(../images/bb3.png); 
+    background-size: 100% 55px;
+    width: 32%;
+    height: 55px;  
+    display: inline-block;
+    margin: auto; 
+  }
+  .bb-btn p{
+    font-family: PSL-Omyim;
+    text-shadow: -1px 0 #ffff05, 0 1px #ffff05, 1px 0 #ffff05, 0 -1px #ffff05;
+    color: #bb2601;
+    font-size: 20px; 
+    line-height: 55px;
+  }
+  h2.text-t2{ 
+    font-size: 36px; 
+  }
+  h2.text-t2{ 
+    font-size: 36px; 
+  }
 }
 @media only screen and (min-width: 992px) { /* PC */
   .navbar .navbar-collapse .navbar-nav .nav-item p{ 
@@ -763,12 +767,56 @@ h2.text-t2 span{
     margin-top: 5px;
     top: 0;
   }
+  .wd-box .wd-box-x div:nth-child(1){ 
+    padding-left: 60px;
+  } 
+  .bb-btn .bb1 p{
+    background-image: url(../images/bb1.png); 
+    background-size: 197px 65px;
+    width: 197px;
+    height: 65px;
+    display: inline-block;
+    margin: auto;
+    margin-right: -20px;
+  }
+  .bb-btn .bb2 p{
+    background-image: url(../images/bb2.png); 
+    background-size: 166px 65px;
+    width: 166px;
+    height: 65px;
+    display: inline-block;
+    margin: auto;
+  }
+  .bb-btn .bb3 p{  
+    background-image: url(../images/bb3.png); 
+    background-size: 197px 65px;
+    width: 197px;
+    height: 65px;  
+    display: inline-block;-
+    margin: auto;
+    margin-left: -20px;
+  }
+  .bb-btn p{
+    font-family: PSL-Omyim;
+    text-shadow: -1px 0 #ffff05, 0 1px #ffff05, 1px 0 #ffff05, 0 -1px #ffff05;
+    color: #bb2601;
+    font-size: 32px; 
+    line-height: 60px;
+  }
+  h2.text-t2{ 
+    font-size: 60px; 
+  }
+  h2.text-t2{ 
+    font-size: 60px; 
+  }
 }
 @media only screen and (width: 768px) { /* IPAD */
   .btn-logout div{
     left: 0;
   } 
-
+  .wd-box .wd-box-x div:nth-child(1){ 
+    padding-left: 60px;
+  } 
 }
 @media only screen and (width: 1024px) { /* IPAD PRO */
   .btn-logout div{
