@@ -505,9 +505,17 @@ h2.text-t2 span{
   height: 230px;
   font-size: 24px;
   margin-bottom: 30px;
+  
 }
 .play-game .box img{
   margin-top: 30px;
+  z-index: 9;
+  position: relative;
+}
+
+.play-game .box p{
+  z-index: 9;
+  position: relative;
 }
 .play-game .box:hover{
   background-color: rgba(21,21,23,.65);  
@@ -519,6 +527,8 @@ h2.text-t2 span{
   display: block;
   margin: auto;
 }
+
+
 
 
 .bb-btn p:hover{ 
@@ -817,6 +827,21 @@ h2.text-t2 span{
   .wd-box .wd-box-x div:nth-child(1){ 
     padding-left: 60px;
   } 
+  
+  .play-gamex:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image: url(../images/cc.png); 
+    background-size: 595px 340px;
+    width: 595px;
+    height: 340px;
+    margin: auto;
+    display: block;
+    left: 24.8%;
+    z-index: 1;
+    overflow: hidden !important;
+  }
 }
 @media only screen and (width: 1024px) { /* IPAD PRO */
   .btn-logout div{
